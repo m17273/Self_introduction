@@ -1,0 +1,438 @@
+<head>
+  <script src="https://kit.fontawesome.com/8180a87f0a.js" crossorigin="anonymous"></script>
+  <title>지혀니페이지</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+    @import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+    @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap);
+
+
+
+
+    
+body {
+  font-family: Roboto Slab;
+  background: #7C7877;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+/* NAVBAR */
+.navigation {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  padding-top: 25px;
+  padding-right: 65px;
+  z-index: 1;
+  /* SHADOW */
+  -webkit-box-shadow: 0px 0px 2px 0px #7C7877;
+  -moz-box-shadow: 0px 0px 2px 0px #7C7877;
+  box-shadow: 0px 0px 2px 0px#7C7877;
+  /* TRANSPARENCY */
+  background-color: #7C7877;
+  color: rgba(1, 1, 1, 0.7);
+}
+
+.navigation a {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation ul
+{
+    margin-top: 12px;
+}
+
+.navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.navigation li:before {
+  content: " | ";
+  color: #fff;
+}
+
+.navigation li:first-child:before {
+content: none;
+}
+
+.navigation li a:hover {
+  color: #fcbe32;
+  font-weight: 600;
+}
+
+/* HEADER DIV */
+#header {
+  text-align: center;
+  
+}
+
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Jeju Gothic', sans-serif;
+}
+
+#header a {
+  font-size: 45px;
+  color: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#header a:hover {
+  font-size: 50px;
+}
+
+/* SCROLL DOWN ARROW */
+.fa-angle-double-down {
+  vertical-align: 8%;
+}
+
+/* SECTION 1 WRAPPER */
+#wrapper1 {
+    font-family: Roboto Slab;
+    padding: 0;
+    margin: 0;
+    color: white;
+    position: center;
+    background: url('http://joelstephenson.com/images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+    
+}
+
+/* ABOUT ME WRAPPER */
+#aboutme {
+  margin-top:10px;
+  margin-bottom: 100px;
+  background:#D9D4CF;
+  color: black;
+  margin-left: 75px;
+  margin-right: 75px;
+  display: block;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;  
+}
+
+/* PORTFOLIO DIV */
+#portfolio {
+  background: #7C7877;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-top: 0px;
+  color: #ABD0CE;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 75pt;
+  
+}
+
+/* FOOTER DIV */
+#footer {
+  background: #ffffff;
+  color: #55606A;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Jeju Gothic', sans-serif;
+  letter-spacing: 3px;
+  line-height: 80px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 29px;
+}
+
+h4 {
+  
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+.logo {
+  color: #ffffff;
+  padding-top: 8px;
+  padding-left: 75px;
+  font-size:25px;
+  line-height: 18px;
+  
+}
+
+.logo a {
+  color: #ffffff;
+  padding-left: 75px;
+  font-size:25px;
+  line-height: 18px;
+  
+}
+
+.sublogo {
+  color: #fcbe32;
+  font-family: 'Jeju Gothic', sans-serif;
+  padding-left: 78px;
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  padding-right: 50px;
+}
+.aboutmestyle {
+  color: #77AAAD;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 75pt;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+ 
+}
+
+/* SCROLL DOWN BUTTON */
+.btn-circle {
+  width: 170px;
+  height: 70px;
+  
+}
+
+.btn-circle:hover {
+  background-color:#fcbe32;
+  width: 200px;
+  height: 200px;
+}
+
+/* HEADSHOT */
+.img-round {
+  border-radius: 100%;
+  height: 35%;
+  width: 19%;
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  
+} 
+
+.content {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 12pt;
+  padding-bottom: 30px;
+}
+
+/* SOCIAL ICONS */
+.icon-btn {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 30px;
+  text-indent: 30px;
+}
+
+a {
+  color: #55606A;
+}
+
+a:hover {
+  color: #fcbe32;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.twitter-icn:hover {
+  color: #48c4d2;
+}
+
+.facebook-icn:hover {
+  color: #3b5998;
+}
+
+.instagram-icn:hover {
+  color: #fb913f;
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size:30px;
+    }
+}
+
+
+
+</style>
+
+
+
+
+
+<body>
+
+    <!-- START NAVBAR -->
+    <div id="wrapper1" class="container-fluid">
+      <nav class="navigation">
+        <div class="left">
+          <div class="logo">MOON JI HYUN</div>
+          <div class="sublogo">렛미인트로듀스마이셀프!</div>
+        </div>
+  
+        <div class="right">
+          <ul>
+            <li><a href="#aboutme">ABOUT ME</a></li>
+            <li></li><a href="#portfolio">PICTURES</a></li>
+            <li><a href="#footer">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- END NAVBAR -->
+  
+      <!-- START HEADER -->
+  
+      <div id="header" class="container-fluid">
+        <div id="welcome">
+          <h1 style="padding-bottom: 10px; font-family: 'Jeju Gothic', sans-serif;">안녕하세요:)</h1>
+          <h4></h4>
+          <a href="#aboutme" class="btn-circle">
+            <i class="fas fa-angle-down fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END WRAPPER -->
+
+  
+    <!-- START ABOUT ME -->
+  
+    <div id="aboutme" class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="aboutmestyle">
+            <h4>ABOUT ME</h4><br>
+          </div>
+          <div class="col-md-4 text-center">
+              <img src="자기소개 이미지.jpg" alt="자기소개이미지임" class="img-round"></img>
+          </div>
+          <div class="content">
+            <p>문지현/ 1997년 4월 28일/ A형</p><br>
+            <p>전공: 영어학과/광고.pr</p><br>
+            <p>안녕하세요! 현재 한국외국어대학교에 재학중인 문지현입니다:)
+            <br>아직 공부한지 얼마 안돼서 머리가 마음을 따라가고 있진 못하지만,,,언젠가는 따라갈 날이 오겠죠..?</p><br>
+            <p>좋아하는 것:사진찍기, 걷기, 여행, 맛집탐방, 고양이(나만업쒀 고양이...) </p><br>
+            <p>싫어하는 것: 익힌 당근, 바퀴벌레 </p><br>
+            <p>인생 최종 목표: 제주도에 조그마한 바 운영하면서 농사 짓고 살기</p><br>
+
+          </div>
+      </div>
+        
+      </div>
+    </div>
+  
+    <!-- END ABOUT ME -->
+  
+    <!-- START PORTFOLIO -->
+  
+    <div id="portfolio" class="container-fluid">
+      <h4>Pictures I Took </h4><br><br>
+      <div class="row1">
+        <div class="col-md-6" style="margin-bottom: 18px">
+          <img src="내사진1.jpg" alt="내사진1" width=50% height = 90% class="img-responsive">
+        </div>
+        <div class="col-md-6" style="margin-bottom: 18px">
+          <img src="내사진2.jpg" alt="내사진2" width=50% height=90% class="img-responsive">
+        </div>
+      </div>
+      <BR>
+      <div class="row">
+        <div class="col-md-6" style="margin-bottom: 18px">
+          <img src="내사진3.jpg" alt="내사진3" width="50%" height="70%" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+          <img src="내사진5.jpg" class="img-responsive" height="90%" width="50%">
+        </div>
+      </div>
+    </div>
+    <!-- END PORTFOLIO -->
+  
+    <!-- START FOOTER -->
+    <div id="footer" class="container-fluid">
+      <p style="font-family: 'Nanum Myeongjo', serif;">(ว˙∇˙)ง 팔로우 신청 환영(◕౪◕✿) </p>
+      <a href="https://www.instagram.com/jihyoniggu/" target="blank" class="icon-btn instagram-icn"><i class="fa fa-instagram"></i></a>
+      <br><br>
+      <p style="color: lightgray;">COPYRIGHT © 2016 JOEL STEPHENSON</p>
+  
+    </div>
+  
+    <!-- END FOOTER -->
+  </body>
+
+  <script>
+      $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+  </script>
